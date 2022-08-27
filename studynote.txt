@@ -1,0 +1,14 @@
+[4.0] Setup
+- React Query : API를 세련되게 fetching 하는 법
+- npm i react-router-dom@5.3.0
+리액트 라우터 돔 
+
+- 라우터
+/ -> All coins
+/:id => /btc -> Coin Detail
+Nested(중첩된) Router : 라우터 안의 라우터 
+btc/information
+btc/chart
+
+- 리액트 라우터 돔을 DT(Definitely Typed)에서 가져와보자.
+npm i --save-dev @types/react-router-dom
