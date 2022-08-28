@@ -3,6 +3,30 @@
 - npm i react-router-dom@5.3.0
 리액트 라우터 돔 
 
+Switch 컴포넌트가 import 되지 않으시는 분들
+react-router-dom 버전 6.0.0부터 Switch를 Routes로 바꿨다고 하네요
+이전 버전을 사용하시려면
+터미널 명령어 npm uni react-router-dom 하고 npm i react-router-dom@5.2.0으로
+낮은 버전을 인스톨해주시면 정상적으로 import 됩니다.
+
+6.0.0 버전 이용하시는 분들은 Switch 대신 Routes를 사용해서
+
+<Routes>
+<Route path="/:coinID" element={<Coins/>}></Route>
+</Routes>
+
+와 같이 코딩하시면 됩니다.
+
+관련 스택오버플로우 질문글
+https://stackoverflow.com/questions/63124161/attempted-import-error-switch-is-not-exported-from-react-router-dom?rq=1
+2020년 7월에 등록된 질문인데 어째서인지 답변이 거의 실시간으로 달리고 있네요
+
+공식 문서
+https://reactrouter.com/docs/en/v6/upgrading/v5#upgrade-to-react-router-v6
+
+이전 버전 호환이 매끄럽지 않은 이슈가 있는 듯합니다.
+
+
 - 라우터
 / -> All coins
 /:id => /btc -> Coin Detail
@@ -12,3 +36,13 @@ btc/chart
 
 - 리액트 라우터 돔을 DT(Definitely Typed)에서 가져와보자.
 npm i --save-dev @types/react-router-dom
+
+-파라미터
+/: 와 같은 아이디는, Router에게 우리의 URL이 변수값을 갖는다는 걸 말해주는 방식이다.
+
+- 타입스크립트에게 useParams가 coinID를 포함하는 오브젝트를 반환할 것이고, coinID는 string이라는 걸 말해줄 수 있다. 
+interface 이용해서!
+
+- useParams는 내가 URL로부터 관심있어하는 정보를 잡아낼 수 있게 해 준다.
+
+
