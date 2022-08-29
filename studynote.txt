@@ -46,3 +46,7 @@ interface 이용해서!
 - useParams는 내가 URL로부터 관심있어하는 정보를 잡아낼 수 있게 해 준다.
 
 
+
+https://reactjs.org/docs/events.html
+레퍼런스..ㅠㅠ 꼭 읽어야하는데..ㅠㅠ힝..
+리액트 문서 공부하기..!!!!
