@@ -50,3 +50,21 @@ interface 이용해서!
 https://reactjs.org/docs/events.html
 레퍼런스..ㅠㅠ 꼭 읽어야하는데..ㅠㅠ힝..
 리액트 문서 공부하기..!!!!
+
+
+[4.1 Styles]
+-> reset css로 css설정을 모두 초기화 시켜버리자.
+-> or styled reset을 사용해보자.
+
+createGlobalStyle : 스타일드 컴포넌트가 가지고 있는, 전역에 css 뿌리는 방법 :)
+
+-> 이 글로벌스타일스 안에 reset css 코드를 넣어보자.
+
+-> font 설치하는 법 : global style안에 구글 폰트의 @import 부분을 가져와서 복사 붙여넣기 한다.
+
+->https://flatuicolors.com/ 
+에서 배경색, 텍스트 컬러 가져와보기
+
+->theme.ts 파일에 기본 색 넣어주고나서, styled.d.ts에 추가된 요소 정보 입력
+
+-> body css에서 ${props => props.theme.bgColor}; 로 사용할 수 있다.

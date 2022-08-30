@@ -2,9 +2,9 @@ import { DefaultTheme } from "styled-components";
 
 
 export const theme:DefaultTheme = {
-    bgColor:"pink",
-    textColor:"black",
-    btnColor: "tomato",
+    bgColor:"#222f3e",
+    textColor:"#f5f6fa",
+    accentColor: "#e1b12c",
 }
 
 
